@@ -11,12 +11,12 @@
 			<br>
 			<input type="text" id="celsius" placeholder="0">
 			ºC
-			<button id="convert" onclick="convertC()">Convertir</button>
+			<button id="convert" onclick="convertCelsius()">Convertir</button>
 			<br>
 		
 			<input type="text" id="farenheit" placeholder="32">
 			ºF
-			<button id="convert" onclick="convertF()">Convertir</button>
+			<button id="convert" onclick="convertFarenheit()">Convertir</button>
 			<br>
 		</section>
 
@@ -30,8 +30,21 @@
 			    <br>
 			    
 		</section>
-		
 		<br>
+		<section>
+			<h1>Horas a decimal</h1>
+			<p>
+				<input id="appt-time" type="text" id="appt-time" step="2"> Horas
+				<button id="convertDecimal" onclick="convertDecimal()">Convertir</button>
+				<p id="decimalByHours"></p>
+			</p>
+			<p>
+				<input type="text" id="decimal" placeholder="00">Decimal
+				<button id="convertHour" onclick="convertHoras()">Convertir</button>
+				<p id="hoursByDecimal"></p>
+
+			</p>
+		</section>
 		
 	</body>
 </html>
