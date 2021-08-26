@@ -68,12 +68,39 @@ function convertHoras(){
 				
 	document.getElementById("hoursByDecimal").innerHTML = hh + ":" + mm + ":" + ss;
 }
+		var contador
+		var stopWatch
+		var stringTime
 
+	function secondsToString(contador) {
+		hh = Math.floor(contador / 3600);
+		hour = (hh < 10)? '0' + hh : hh;
+		mm = Math.floor((contador / 60) % 60);
+		minute = (mm < 10)? '0' + mm : mm;
+		ss = contador % 60;
+		second = (ss < 10)? '0' + ss : ss;
+		return  hour + ":" + minute + ":" + second  
+	};
 
+	function updateDisplay(){
+		contador++;
+		stringTime = secondsToString(contador);
+		document.getElementById("cronometro").innerHTML= stringTime;
+	}
 
+	function start(){
+		document.getElementById("btn-detener").value
+		contador = 0
+		stopWatch = setInterval(updateDisplay,1000)
+		updateDisplay();
 
-		
+	};
 
-			
-
-
+	function stop(){
+		document.getElementById("btn-detener").value
+		stringTime = secondsToString(contador)
+		console.log(contador)
+		clearInterval(stopWatch)
+		document.getElementById("times_result").innerHTML +=  "<div>" + stringTime + "</div>" ;
+		document.getElementById("cronometro").innerHTML = "00:00:00";
+	};
