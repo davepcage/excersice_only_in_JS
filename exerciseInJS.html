@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Excersice In Js</title>
-		<script src="./scriptToExcerciseJS.js"></script>
+		
 	</head>
 	<body>
 		
@@ -12,19 +12,19 @@
 			<br>
 			<input type="text" id="celsius" placeholder="0">
 			ºC
-			<button id="convert" onclick="convertCelsius()">Convertir</button>
+			<button id="convert">Convertir</button>
 			<br>
 		
 			<input type="text" id="farenheit" placeholder="32">
 			ºF
-			<button id="convert" onclick="convertFarenheit()">Convertir</button>
+			<button id="convert2">Convertir</button>
 			<br>
 		</section>
 
 		<section>
 			<h1> Pyramid of Stars</h1>
 			    <input type="text" id="stars" placeholder="Stars in the Pyramid">
-			    <button id="starsPy" onclick="buildPyramid()">Construir</button>
+			    <button id="starsPy">Construir</button>
 			    <p id="drawStars"></p>
 
 			    <br>
@@ -36,12 +36,12 @@
 			<h1>Horas a decimal</h1>
 			<p>
 				<input id="appt-time" type="text" id="appt-time" step="2"> Horas
-				<button id="convertDecimal" onclick="convertDecimal()">Convertir</button>
+				<button id="convertDecimal">Convertir</button>
 				<p id="decimalByHours"></p>
 			</p>
 			<p>
 				<input type="text" id="decimal" placeholder="00">Decimal
-				<button id="convertHour" onclick="convertHoras()">Convertir</button>
+				<button id="convertHour">Convertir</button>
 				<p id="hoursByDecimal"></p>
 
 			</p>
@@ -51,13 +51,14 @@
 			<div id="timer">
 				<span id="cronometro">00:00:00</span>    ms  
 				<br>
-				<button type="button" id="btn-comenzar" onclick="start()">Comenzar</button>
-				<button type="button" id="btn-detener" onclick="stop()">Detener</button>
+				<button type="button" id="btn-comenzar">Comenzar</button>
+				<button type="button" id="btn-detener">Detener</button>
 			<br>
 			<div id="times_result" style="background-color: yellowgreen; ">
 				
 			</div>
 		</section>
 		
+		 <script src="./scriptToExcerciseJS.js"></script>
 	</body>
 </html>

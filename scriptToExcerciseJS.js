@@ -1,14 +1,19 @@
-function convertCelsius(){
+	// <<<----------------- celsius to farenheit -------------->>>
+
+document.getElementById("convert").addEventListener("click", function(){
 	const celsius = document.getElementById("celsius").value;
 	farenheit = (celsius * 1.8)+ 32;
 	document.getElementById("farenheit").value = farenheit;
-}
+});
 
-function convertFarenheit(){
+document.getElementById("convert2").addEventListener("click", function(){
 	const farenheit = document.getElementById("farenheit").value;
 	celsius = (farenheit - 32)/1.8
 	document.getElementById("celsius").value = celsius;
-}
+});
+
+
+	// <<<----------------- Pyramid ---------------------->>>
 function crecienteStar(star){
 	var creciente = '';
 	for (var i = 1; i <= star; i++) {
@@ -31,16 +36,15 @@ function decrecienteStar(star){
 	}; 
 }
 
-function buildPyramid(){
+document.getElementById("starsPy").addEventListener("click", function(){
 	document.getElementById("drawStars").innerHTML = " "
 	const star = document.getElementById("stars").value;
 	crecienteStar(star);
 	decrecienteStar(star);
-};
- 
-function convertDecimal(){
+});
+	// <<<----------------- Convert decimal to Hours ---------------------->>>
+document.getElementById("convertDecimal").addEventListener("click", function(){
 	const time =  document.getElementById("appt-time").value.split([":"]);
-
 	hh = parseInt(time[0]);
 	mm = parseInt(time[1]);
 	ss = parseInt(time[2]);
@@ -50,9 +54,10 @@ function convertDecimal(){
 	document.getElementById("decimalByHours").innerHTML =  hh + m ;
 	// $("#decimal").value(hh + m);
 
-}
+});
 
-function convertHoras(){
+document.getElementById("convertHour").addEventListener("click", function(){
+
 	const decimal = document.getElementById("decimal").value.split(["."]);
 	hh = decimal[0].toString()
 
@@ -67,7 +72,11 @@ function convertHoras(){
 	ss = s[1]
 				
 	document.getElementById("hoursByDecimal").innerHTML = hh + ":" + mm + ":" + ss;
-}
+});
+
+
+	// <<<----------------- StopoWatch ---------------------->>>
+
 		var contador
 		var stopWatch
 		var stringTime
@@ -87,20 +96,18 @@ function convertHoras(){
 		stringTime = secondsToString(contador);
 		document.getElementById("cronometro").innerHTML= stringTime;
 	}
-
-	function start(){
+document.getElementById("btn-comenzar").addEventListener("click", function(){
 		document.getElementById("btn-detener").value
 		contador = 0
 		stopWatch = setInterval(updateDisplay,1000)
 		updateDisplay();
 
-	};
-
-	function stop(){
+	});
+document.getElementById("btn-detener").addEventListener("click", function(){
 		document.getElementById("btn-detener").value
 		stringTime = secondsToString(contador)
 		console.log(contador)
 		clearInterval(stopWatch)
 		document.getElementById("times_result").innerHTML +=  "<div>" + stringTime + "</div>" ;
 		document.getElementById("cronometro").innerHTML = "00:00:00";
-	};
+	});
