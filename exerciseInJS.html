@@ -1,65 +1,53 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Excersice In Js</title>
-		
-	</head>
-	<body>
-		<header>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Excersice In Js</title>
+  </head>
+
+  <body>
+    <header>
 			<a href="./ToDoList.html"> To do List</a>
 		</header>
-		<section>
-			<h1>Celsius To Farenheit</h1>
-			<br>
-			<input type="text" id="celsius" placeholder="0">
-			ºC
-			<button id="convert" onclick="convertCelsius()">Convertir</button>
-			<br>
-		
-			<input type="text" id="farenheit" placeholder="32">
-			ºF
-			<button id="convert" onclick="convertFarenheit()">Convertir</button>
-			<br>
-		</section>
+    <section>
+      <h1>Celsius To Farenheit</h1>
+      <input type="text" id="celsius" placeholder="0">
+      ºC to
+    
+      <input type="text" id="farenheit" placeholder="32">
+      ºF
+    </section>
 
-		<section>
-			<h1> Pyramid of Stars</h1>
-			    <input type="text" id="stars" placeholder="Stars in the Pyramid">
-			    <button id="starsPy" onclick="buildPyramid()">Construir</button>
-			    <p id="drawStars"></p>
 
-			    <br>
-			    <br>
-			    
-		</section>
-		<br>
-		<section>
-			<h1>Horas a decimal</h1>
-			<p>
-				<input id="appt-time" type="text" id="appt-time" step="2"> Horas
-				<button id="convertDecimal" onclick="convertDecimal()">Convertir</button>
-				<p id="decimalByHours"></p>
-			</p>
-			<p>
-				<input type="text" id="decimal" placeholder="00">Decimal
-				<button id="convertHour" onclick="convertHoras()">Convertir</button>
-				<p id="hoursByDecimal"></p>
+    <section>
+      <h1> Pyramid of Stars</h1>
+      <input type="text" id="stars" placeholder="Stars in the Pyramid">
+      <p id="drawStars"></p>
+    </section>
 
-			</p>
-		</section>
-		<section>
-			<h1>Stop Watch</h1>
-			<div id="timer">
-				<span id="cronometro">00:00:00</span>    ms  
-				<br>
-				<button type="button" id="btn-comenzar" onclick="start()">Comenzar</button>
-				<button type="button" id="btn-detener" onclick="stop()">Detener</button>
-			<br>
-			<div id="times_result" style="background-color: yellowgreen; ">
-				
-			</div>
-		</section>
-		<script src="./scriptToExcerciseJS.js"></script>
-	</body>
+    <section>
+      <h1>Hours to Decimal</h1>
+      <p>
+        <input id="appt-time" type="text" step="2" placeholder="00:00:00"> Hours to Decimal
+     
+        <input type="text" id="decimal" placeholder="0.0"> 
+      </p>
+    </section>
+
+    <section>
+      <h1>Stop Watch</h1>
+      <div id="timer">
+        <span id="cronometro">00:00:00</span>    ms  
+        <br>
+        <button type="button" id="stopWatch">Start</button>
+        <br>
+        <div id="times_result" style="background-color: yellowgreen; ">
+      </div>
+
+    </section>
+    
+    <script src="./scriptToExcerciseJS.js"></script>
+  </body>
+
 </html>
