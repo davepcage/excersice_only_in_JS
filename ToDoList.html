@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>To do List</title>
-	
-</head>
-<body>
-	<header>
-		<a href="./exerciseInJS.html">Home</a>
-	</header>
-	<section>
-		<style type="text/css">
-			.done{
-				background-color: blue;
-			}
-			.terminar{
+  <head>
+    <meta charset="utf-8">
+    <title>To do List</title>
+  </head>
 
-			}
-		</style>
-		<h1>To do List</h1>
-		<textarea id="job" placeholder="Agregue nueva tarea"></textarea>
-		<button id="add">Agregar tarea</button>
-		<div id="pendientes" ></div>
+ <!--  <body>
+    
+    <section> 
+ 
+      
+      <textarea id="job" placeholder="Agregue nueva tarea"></textarea>
+      <button id="add">Agregar tarea</button>
+      <ul id="pendientes" ></ul>
 
-	</section>
-	<script src="./scriptToDoList.js"></script>
-</body>
+    </section>
+  
+  </body> -->
+  <body>
+    <header>
+      <a href="./exerciseInJS.html">Home</a>
+    </header>
+    <br>
+    <h1>To do List</h1>
+    <div id="myDIV" class="header">
+      <textarea type="text" id="myInput" placeholder="Title..."></textarea>
+      <button onclick="newElement()">Add</button>
+    </div>
+
+    <ul id="myUL">
+    </ul>
+    <style type="text/css">
+ 
+      ul li.checked {
+        text-decoration: line-through;
+      }
+
+      .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px 16px 12px 16px;
+      }
+
+    
+    </style>
+      <script src="./scriptToDoList.js"></script>
+  </body>
 </html>
