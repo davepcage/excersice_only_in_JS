@@ -1,5 +1,3 @@
-
-
 var list = document.querySelector('ul');
 list.addEventListener('click', function(event) {
   if (event.target.tagName == 'LI') {
@@ -7,7 +5,7 @@ list.addEventListener('click', function(event) {
   }
 }, false);
 
- document.getElementById("add").addEventListener("click", function(){
+document.getElementById("add").addEventListener("click", function(){
   tarea = document.getElementById("job").value
   element = document.createElement("li");
   t = document.createTextNode(tarea);
