@@ -11,7 +11,7 @@ document.getElementById("farenheit").addEventListener("keyup", function(){
   celsius = (farenheit - 32)/1.8
   document.getElementById("celsius").value = celsius;
 });
-
+  
 
   // <<<----------------- Pyramid ---------------------->>>
 function crecienteStar(star){

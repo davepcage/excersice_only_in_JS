@@ -13,3 +13,4 @@ document.getElementById("add").addEventListener("click", function(){
   document.getElementById("pendientes").appendChild(element);
   document.getElementById("job").value = "";
 });
+  
