@@ -78,7 +78,7 @@ textarea{
 	text-align: right;
 }
 
-li{
+.ftItem{
 	display: inline;
 	margin-left: 2rem;
 	margin-right: 2rem;
