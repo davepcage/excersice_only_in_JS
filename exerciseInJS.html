@@ -11,8 +11,8 @@
 
   <body>
     <header>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark btn-lg" style="background-color: #241c5b;">
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark btn-lg head" style="background-color: #241c5b;">
           <a class="navbar-brand" href="">Exercise in JS</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,14 +27,14 @@
                 <a class="nav-link" href="./ToDoList.html">To do List</a>
               </li>
               <li class="nav-item active dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                   Tools
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Celsius To Farenheit</a>
-                  <a class="dropdown-item" href="#">Pyramid of Stars</a>
-                  <a class="dropdown-item" href="#">Hours to Decimal</a>
-                  <a class="dropdown-item" href="#">Stop Watch</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown " style="background-color: #241c5b;">
+                  <a class="dropdown-item" style="color: #A2A8FD;" href="#celsiusToF">Celsius To Farenheit</a>
+                  <a class="dropdown-item" style="color: #A2A8FD;" href="#pyramid">Pyramid of Stars</a>
+                  <a class="dropdown-item" style="color: #A2A8FD;" href="#hoursToD">Hours to Decimal</a>
+                  <a class="dropdown-item" style="color: #A2A8FD;" href="#stoped">Stop Watch</a>
                 </div>
               </li>
             </ul>
@@ -46,8 +46,17 @@
     <section class="text">
       <div class="container-fluid">
         <div class="container">
-          <h1>Celsius to Farenheit</h1>
+          <h1 id="celsiusToF">Celsius to Farenheit</h1>
         </div>
+      </div>
+      <div class="container">
+        <h3>Description</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
       </div>
       <div class="container">
         <input type="text" id="celsius" placeholder="0">
@@ -57,11 +66,20 @@
       </div>
     </section>
 
-    <section>
+    <section class="text">
       <div class="container-fluid">
         <div class="container">
-          <h1> Pyramid of Stars</h1>
+          <h1 id="pyramid"> Pyramid of Stars</h1>
         </div>
+      </div>
+      <div class="container">
+        <h3>Description</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
       </div>
       <div class="container">
         <input type="text" id="stars" placeholder="Stars in the Pyramid">
@@ -72,8 +90,17 @@
     <section class="text">
       <div class="container-fluid">
         <div class="container">
-          <h1>Hours to Decimal</h1>
+          <h1 id="hoursToD">Hours to Decimal</h1>
         </div>
+      </div>
+      <div class="container">
+        <h3>Description</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
       </div>
       <div class="container">
         <input id="appt-time" type="text" step="2" placeholder="00:00:00">  Hours to Decimal 
@@ -84,17 +111,39 @@
     <section class="text">
       <div class="container-fluid">
         <div class="container">
-          <h1>Stop Watch</h1>
+          <h1 id="stoped">Stop Watch</h1>
         </div>
       </div>
       <div class="container">
+        <h3>Description</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      </div>
+      <div class="container">
         <div id="timer" class="col-3">
-          <span id="cronometro">00:00:00</span> ms  
-          <br>
-          <button type="button" id="stopWatch">Start</button>
+          <span id="cronometro">00:00:00</span> <button type="button" id="stopWatch" class="col-4">Start</button>   
+          
           <br>
           <div id="times_result" class="result"></div>
         </div>
+    </section>
+    <section class="ft">
+      
+        <footer>
+          <ul class="content">
+            <li>Contact</li>
+            <li>Questions</li>
+            <li>Terms and conditions</li>
+            <li>Students</li>
+            <li>About us</li>
+            <li>Privacy</li>
+            <li>News</li>
+          </ul>
+      </footer>
     </section>
     
     <script src="./scriptToExcerciseJS.js"></script>
