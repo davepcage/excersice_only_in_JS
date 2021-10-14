@@ -8,8 +8,13 @@ document.getElementById("celsius").addEventListener("keyup", function(){
 
 document.getElementById("farenheit").addEventListener("keyup", function(){
   const farenheit = document.getElementById("farenheit").value;
-  celsius = (farenheit - 32)/1.8
-  document.getElementById("celsius").value = celsius;
+  if (farenheit){
+    celsius = (farenheit - 32)/1.8
+    document.getElementById("celsius").value = celsius;
+  }else{ 
+    document.getElementById("celsius").value = 0;
+  }
+  
 });
   
 
