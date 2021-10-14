@@ -45,6 +45,7 @@ ul li.checked {
   text-decoration: line-through;
 }
 .head{
+	background-color: #241c5b;
 	margin-top: 1rem;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
