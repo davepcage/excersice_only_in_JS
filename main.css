@@ -6,38 +6,38 @@ background-color: #60328a;
 }
 
 h1{ 
-	margin-top: 3rem;
-	color: #e94f81;
+  margin-top: 3rem;
+  color: #e94f81;
 }
 
 h3{
-	margin-top: 2rem;
-	margin-left: 2rem;
-	color: #11dff7;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  color: #11dff7;
 }
 
 .text{
-	color: #bbc6ff;
+  color: #bbc6ff;
 }
 .stars{
-	color: #11dff7;
+  color: #11dff7;
 }
 .result{
-	margin-top: 1rem;
-	border-spacing: 1 rem;
-	background-color: #448A2B;
-	color: #D6C063;
+  margin-top: 1rem;
+  border-spacing: 1 rem;
+  background-color: #448A2B;
+  color: #D6C063;
 }
 
 ul li.checked {
-	text-decoration: line-through;    
+  text-decoration: line-through;    
 }
 
 .close {
-	position: absolute;
-	right: 0;
-	top: 0;
-	padding: 12px 16px 12px 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
 } 
 ul li.checked {
   background: #888;
@@ -45,46 +45,46 @@ ul li.checked {
   text-decoration: line-through;
 }
 .head{
-	background-color: #241c5b;
-	margin-top: 1rem;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	padding-left: 4rem;
+  background-color: #241c5b;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
 }
 p{
-	margin-left: 3rem;
+  margin-left: 3rem;
 }
 input{
-	margin-left: 3rem;
+  margin-left: 3rem;
 }
 span{
-	color: yellow;
-	margin-left: 2rem;
+  color: yellow;
+  margin-left: 2rem;
 }
 button{
-	
+  
 }
 textarea{
-	margin-left: 3rem;
+  margin-left: 3rem;
 }
 .ft{
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	padding-left: 4rem;
-	background-color: #241c5b;
-	color: white;
-	position: unset;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  background-color: #241c5b;
+  color: white;
+  position: unset;
 }
 
 .content{
-	text-align: right;
+  text-align: right;
 }
 
 .ftItem{
-	display: inline;
-	margin-left: 2rem;
-	margin-right: 2rem;
+  display: inline;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
